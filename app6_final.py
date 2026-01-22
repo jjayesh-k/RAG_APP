@@ -19,7 +19,8 @@ app = Flask(__name__)
 # --- CONFIGURATION ---
 EMBEDDING_MODEL = 'nomic-embed-text'
 # EMBEDDING_MODEL = 'all-minilm' --->> ollama pull all-minilm
-LANGUAGE_MODEL = 'ministral-3:3b'
+# LANGUAGE_MODEL = 'ministral-3:3b'
+LANGUAGE_MODEL = 'mistral:7b'
 # EMBEDDING_MODEL = 'hf.co/CompendiumLabs/bge-base-en-v1.5-gguf'
 CACHE_DIR = "cache"
 INDEX_CACHE = "cache/index_cache"

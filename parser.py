@@ -26,7 +26,7 @@ def parse_hybrid_pdf(pdf_path):
             page_num = i + 1
             # print("---------------->", page)
             # 1. Try Digital Extraction first
-            extracted = page.extract_text()
+            extracted = page.extract_text(layout=True)
             
             # 2. Decision Logic: Is this page Scanned?
             # We assume it's scanned if extracted text is None or very short (< 15 chars)
@@ -60,7 +60,7 @@ def parse_hybrid_pdf(pdf_path):
 
 # --- RUN IT ---
 if __name__ == "__main__":
-    pdf_file = r"E:\Projects_main\TATA\safety\Tata Code Of Conduct.pdf"
+    pdf_file = r"D:\JK\RAG\RAG_APP\Tata Code Of Conduct.pdf"
     
     if os.path.exists(pdf_file):
         text = parse_hybrid_pdf(pdf_file)
