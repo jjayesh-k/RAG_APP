@@ -1,18 +1,15 @@
 from flask import Flask, request, jsonify, render_template, Response, stream_with_context
 import ollama
-import numpy as np
-from usearch.index import Index
 import time
-import re
 import os
 import pickle
-import hashlib
 import json
-from concurrent.futures import ThreadPoolExecutor
 import threading
 from werkzeug.utils import secure_filename
 from parser import parse_hybrid_pdf
 import tempfile
+from chunker import semantic_chunker_optimized
+from indexer import build_index_optimized, to_float16, get_file_hash
 
 app = Flask(__name__)
 
@@ -22,15 +19,14 @@ EMBEDDING_MODEL = 'nomic-embed-text'
 # LANGUAGE_MODEL = 'ministral-3:3b'
 LANGUAGE_MODEL = 'mistral:7b'
 # EMBEDDING_MODEL = 'hf.co/CompendiumLabs/bge-base-en-v1.5-gguf'
-CACHE_DIR = "cache"
-INDEX_CACHE = "cache/index_cache"
-MIN_CHUNK_SIZE = 500
-MAX_CHUNK_SIZE = 1500
-SIMILARITY_THRESHOLD = 0.75
-BATCH_SIZE = 50  # Process embeddings in batches
+# CACHE_DIR = "cache"
+# INDEX_CACHE = "cache/index_cache"
+BATCH_SIZE = 50
 
-os.makedirs(CACHE_DIR, exist_ok=True)
-os.makedirs(INDEX_CACHE, exist_ok=True)
+  # Process embeddings in batches
+
+# os.makedirs(CACHE_DIR, exist_ok=True)
+# os.makedirs(INDEX_CACHE, exist_ok=True)
 
 # --- GLOBAL STATE ---
 class RAGState:
@@ -42,125 +38,7 @@ class RAGState:
 
 state = RAGState()
 
-# --- OPTIMIZED HELPER FUNCTIONS ---
-def to_float16(float_vector):
-    return np.array(float_vector, dtype=np.float16)
-
-def get_file_hash(files_content):
-    """Fast hash using first/last 1000 chars + length"""
-    sample = files_content[:1000] + files_content[-1000:] + str(len(files_content))
-    return hashlib.md5(sample.encode('utf-8')).hexdigest()
-
-def semantic_chunker_optimized(text):
-    """
-    Semantic chunker that ensures NO TEXT is dropped.
-    """
-    text = text.replace('\n', ' ').replace('  ', ' ').strip()
-    sentences = re.split(r'(?<=[.!?])\s+', text)
-    sentences = [s.strip() for s in sentences if s.strip()]
-    
-    if not sentences:
-        return []
-    
-    print(f"Processing {len(sentences)} sentences...")
-    
-    # BATCH EMBEDDING
-    sentence_embeddings = []
-    for i in range(0, len(sentences), BATCH_SIZE):
-        batch = sentences[i:i + BATCH_SIZE]
-        batch_embeds = []
-        for sent in batch:  
-            embed = ollama.embed(model=EMBEDDING_MODEL, input=sent)['embeddings'][0]
-            batch_embeds.append(np.array(embed, dtype=np.float16))
-        sentence_embeddings.extend(batch_embeds)
-        
-        if i % 100 == 0:
-            print(f"  Processed {min(i + BATCH_SIZE, len(sentences))}/{len(sentences)} sentences")
-    
-    # Calculate similarities
-    similarities = []
-    for i in range(len(sentence_embeddings) - 1):
-        vec1, vec2 = sentence_embeddings[i], sentence_embeddings[i+1]
-        sim = np.dot(vec1, vec2) / (np.linalg.norm(vec1) * np.linalg.norm(vec2) + 1e-10)
-        similarities.append(float(sim))
-    
-    # Create chunks (ZERO LOSS LOGIC)
-    chunks = []
-    current_chunk = [sentences[0]]
-    current_len = len(sentences[0])
-    
-    for i in range(len(similarities)):
-        sent = sentences[i+1]
-        sent_len = len(sent)
-        
-        # Split only if max size reached OR similarity drops low
-        should_split = (
-            similarities[i] < SIMILARITY_THRESHOLD or 
-            current_len + sent_len > MAX_CHUNK_SIZE
-        )
-        
-        # CHANGED: We removed the check `and current_len >= MIN_CHUNK_SIZE`
-        # Now, if the topic changes, we split immediately, preserving small specific facts.
-        if should_split:
-            chunks.append(' '.join(current_chunk).strip())
-            current_chunk = [sent]
-            current_len = sent_len
-        else:
-            current_chunk.append(sent)
-            current_len += sent_len
-    
-    # Append the last chunk
-    if current_chunk:
-        chunks.append(' '.join(current_chunk).strip())
-    
-    return chunks
-    # print("--------------> chunks", chunks)
-def build_index_optimized(chunks, file_hash):
-    """
-    Build index with caching - checks if index already exists.
-    """
-    index_path = os.path.join(INDEX_CACHE, f"index_{file_hash}.usearch")
-    chunk_map_path = os.path.join(INDEX_CACHE, f"chunks_{file_hash}.pkl")
-    
-    # Try to load existing index
-    if os.path.exists(index_path) and os.path.exists(chunk_map_path):
-        print("Loading cached index from disk...")
-        index = Index.restore(index_path)
-        with open(chunk_map_path, 'rb') as f:
-            mapping = pickle.load(f)
-        return index, mapping
-    
-    # Build new index
-    print("Building new index...")
-    dummy = ollama.embed(model=EMBEDDING_MODEL, input="test")['embeddings'][0]
-    index = Index(ndim=len(dummy), metric='cos', dtype='f16')
-    mapping = {}
-    
-    # Batch embed chunks
-    for i in range(0, len(chunks), BATCH_SIZE):
-        batch = chunks[i:i + BATCH_SIZE]
-        
-        for j, chunk in enumerate(batch):
-            idx = i + j
-            embed = ollama.embed(model=EMBEDDING_MODEL, input=chunk)['embeddings'][0]
-            index.add(idx, to_float16(embed))
-            mapping[idx] = chunk
-        
-        if i % 100 == 0:
-            print(f"  Indexed {min(i + BATCH_SIZE, len(chunks))}/{len(chunks)} chunks")
-    
-    os.makedirs(INDEX_CACHE, exist_ok=True)
-
-    # Save index to disk
-    index.save(index_path)
-    with open(chunk_map_path, 'wb') as f:
-        pickle.dump(mapping, f)
-    
-    print("✓ Index saved to disk")
-    return index, mapping
-
 # --- FLASK ROUTES ---
-
 @app.route('/')
 def home():
     return render_template('index.html')
