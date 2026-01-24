@@ -4,15 +4,7 @@ import ollama
 from usearch.index import Index
 import numpy as np
 import hashlib
-
-CACHE_DIR = "cache"
-INDEX_CACHE = "cache/index_cache"
-BATCH_SIZE = 50
-
-EMBEDDING_MODEL = 'nomic-embed-text'
-
-os.makedirs(CACHE_DIR, exist_ok=True)
-os.makedirs(INDEX_CACHE, exist_ok=True)
+from config import EMBEDDING_MODEL, INDEX_CACHE, BATCH_SIZE
 
 def to_float16(float_vector):
     return np.array(float_vector, dtype=np.float16)

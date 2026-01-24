@@ -1,0 +1,1407 @@
+### **LEADERSHIP THAT INSPIRES**
+
+For over 100 years, the Tata group has been led by visionaries who have stayed
+
+true to the vision of the founder, Jamsetji Tata.
+
+A vision that placed the greater good of society at par with business growth.
+
+A vision that put into practice pioneering social initiatives that changed the
+
+way responsible business was run.
+
+And a vision that brought into the group a strong social conscience.
+
+
+We do not claim to be more unselfish, more generous or more philanthropic
+
+than other people. But we think we started on sound and straightforward
+
+business principles, considering the interests of the shareholders our own, and
+
+the health and welfare of the employees, the sure foundation of our success.
+
+
+Jamsetji Tata
+Founder of the Tata group
+Chairman (1868 – 1904)
+
+
+
+1
+
+
+**TCOC** 2015
+
+
+#### **ContentS**
+
+**Foreword** 3
+
+A Our values 4
+
+B Scope and purpose of this Code 5
+
+C Our core principles 7
+
+D Our employees 9
+
+E Our customers 18
+
+F Our communities and the environment 21
+
+G Our value-chain partners 23
+
+H Our financial stakeholders 25
+
+I Governments 27
+
+J Our group companies 29
+
+
+**Raising concerns** 30
+
+
+**Accountability** 31
+
+
+**Acknowledgement sheet** 33
+
+
+
+2
+
+
+#### **FOREWORD**
+
+Tata companies have consistently adhered to the values and ideals articulated by the Founder
+for over 150 years. The Tata Code of Conduct was first formalized by Mr Ratan Tata. It articulates
+the Group’s values and ideals that guide and govern the conduct of our companies as well as our
+colleagues in all matters relating to business. Today, the Code is a bedrock on which we base our
+individual, as well as leadership commitments to core Tata values.
+
+
+The Tata Code of Conduct outlines our commitment to each of our stakeholders, including the
+communities in which we operate, and is our guiding light when we are sometimes faced with
+business dilemmas that leave us at ethical crossroads. The Code is also dynamic in that it has
+been periodically refreshed in order to remain contemporary and contextual to the changes in
+law and regulations. However it remains unaltered at its core.
+
+
+Our stellar reputation and success as a business entity has been defined by the powerful
+commitment and adherence to the core values and principles expressed in this Code, by all our
+employees, directors and partners. I trust every Tata colleague and Tata company will continue
+to not only comply with the laws and regulations that govern our business interests around the
+world, but will continue to set new standards of ethical conduct that will generate deep respect
+and inspire emulation by others.
+
+
+**N. Chandrasekaran**
+21 [st] February, 2017
+
+
+**TCOC** 2015
+
+
+#### **A. OUR VALUES**
+
+TATA has always been values-driven. The five core values that underpin the way
+we conduct our business activities are:
+
+
+
+must stand the test of
+public scrutiny.
+
+
+and social principles in our
+businesses, ensuring that what
+comes from the people goes back
+to the people many times over.
+
+
+
+UNITY
+
+We will invest in our
+
+and mutual respect.
+
+
+courageously taking on challenges,
+using deep customer insight to
+develop innovative solutions.
+
+
+
+EXCELLENCE
+
+We will be passionate about
+achieving the highest
+standards of quality, always
+promoting meritocracy.
+
+
+These universal values serve as the foundation for the Tata Code of Conduct.
+They find expression within the value system of every Tata company.
+
+
+
+4
+
+
+#### **B. scope and purpose of this Code**
+
+
+
+1. This Code sets out how we behave with:
+
+
+    - our employees, or those who work
+with us;
+
+
+    - our customers;
+
+
+    - the communities and the environment
+in which we operate;
+
+
+    - our value-chain partners, including
+suppliers and service providers,
+distributors, sales representatives,
+contractors, channel partners,
+consultants, intermediaries and agents;
+
+
+    - our joint-venture partners or other
+business associates;
+
+
+    - our financial stakeholders;
+
+
+    - the governments of the countries in
+which we operate; and
+
+
+    - our group companies.
+
+
+
+2. In this Code, “we or us” means our company,
+our executive directors, officers, employees
+and those who work with us, as the context
+may require.
+
+
+3. The term “our group companies” in this Code
+typically means companies Tata Sons intends
+for this Code to apply to, and / or to whom
+Tata Sons has issued this Code.
+
+
+4. This Code sets out our expectations of all
+those who work with us. We also expect those
+who deal with us to be aware that this Code
+underpins everything we do, and in order to
+work with us they need to act in a manner
+consistent with it.
+
+
+
+
+
+
+
+5
+
+
+**TCOC** 2015
+
+
+# **OUR CORE PRINCIPLES**
+
+The Tata philosophy of management has always been, and is today more than
+
+ever, that corporate enterprises must be managed not merely in the interests
+
+of their owners, but equally in those of their employees, of the consumers of
+
+their products, of the local community and finally of the country as a whole.
+
+
+J.R.D. Tata
+Chairman, Tata Sons (1938 – 1991)
+
+
+
+6
+
+
+#### **C. OUR CORE PRINCIPLES**
+
+
+
+1. We are committed to operating our businesses
+conforming to the highest moral and ethical
+standards. We do not tolerate bribery or
+corruption in any form. This commitment
+underpins everything that we do.
+
+
+2. We are committed to good corporate
+citizenship. We treat social development
+activities which benefit the communities in
+which we operate as an integral part of our
+business plan.
+
+
+3. We seek to contribute to the economic
+development of the communities of the
+countries and regions we operate in, while
+respecting their culture, norms and heritage.
+We seek to avoid any project or activity that
+is detrimental to the wider interests of the
+communities in which we operate.
+
+
+4. We shall not compromise safety in the pursuit
+of commercial advantage. We shall strive to
+provide a safe, healthy and clean working
+environment for our employees and all those
+who work with us.
+
+
+5. When representing our company, we shall act
+with professionalism, honesty and integrity,
+and conform to the highest moral and ethical
+standards. In the countries we operate in, we
+shall exhibit culturally appropriate behaviour.
+Our conduct shall be fair and transparent
+and be perceived as fair and transparent by
+third parties.
+
+
+6. We shall respect the human rights and dignity
+of all our stakeholders.
+
+
+
+7. We shall strive to balance the interests of our
+stakeholders, treating each of them fairly and
+avoiding unfair discrimination of any kind.
+
+
+8. The statements that we make to our
+stakeholders shall be truthful and made
+in good faith.
+
+
+9. We shall not engage in any restrictive or
+unfair trade practices.
+
+
+10. We shall provide avenues for our stakeholders
+to raise concerns or queries in good faith,
+or report instances of actual or perceived
+violations of our Code.
+
+
+11. We shall strive to create an environment free
+from fear of retribution to deal with concerns
+that are raised or cases reported in good faith.
+No one shall be punished or made to suffer
+for raising concerns or making disclosures in
+good faith or in the public interest.
+
+
+12. We expect the leaders of our businesses
+to demonstrate their commitment to the
+ethical standards set out in this Code through
+their own behaviour and by establishing
+appropriate processes within their companies.
+
+
+13. We shall comply with the laws of the
+countries in which we operate and any other
+laws which apply to us. With regard to those
+provisions of the Code that are explicitly dealt
+with under an applicable law or employment
+terms, the law and those terms shall take
+precedence. In the event that the standards
+prescribed under any applicable law are
+lower than that of the Code, we shall conduct
+ourselves as per the provisions of the Code.
+
+
+
+
+
+
+
+7
+
+
+**TCOC** 2015
+
+
+# **OUR Employees**
+
+Once you got the best people, the people who shared our values and ideals,
+
+we left them free to act on their own. We do not fetter them. We encourage
+
+them and give them opportunities for leadership.
+
+
+J.R.D. Tata
+Chairman, Tata Sons (1938 – 1991)
+
+
+
+8
+
+
+#### **D. OUR Employees**
+
+
+
+**Equal opportunity employer**
+
+1. We provide equal opportunities to all our
+employees and to all eligible applicants
+for employment in our company. We do
+not unfairly discriminate on any ground,
+including race, caste, religion, colour,
+ancestry, marital status, gender, sexual
+orientation, age, nationality, ethnic origin,
+disability or any other category protected
+by applicable law.
+
+
+
+2. When recruiting, developing and promoting
+our employees, our decisions will be based
+solely on performance, merit, competence
+and potential.
+
+
+3. We shall have fair, transparent and clear
+employee policies which promote diversity
+and equality, in accordance with applicable
+law and other provisions of this Code. These
+policies shall provide for clear terms of
+employment, training, development and
+performance management.
+
+
+
+
+
+
+
+
+
+9
+
+
+**TCOC** 2015
+
+
+**Dignity and respect**
+
+4. Our leaders shall be responsible for creating
+a conducive work environment built on
+tolerance, understanding, mutual cooperation
+and respect for individual privacy.
+
+
+5. Everyone in our work environment must be
+treated with dignity and respect. We do not
+tolerate any form of harassment, whether
+sexual, physical, verbal or psychological.
+
+
+6. We have clear and fair disciplinary
+procedures, which necessarily include an
+employee’s right to be heard.
+
+
+7. We respect our employees’ right to privacy.
+We have no concern with their conduct
+outside our work environment, unless such
+conduct impairs their work performance,
+creates conflicts of interest or adversely
+affects our reputation or business interests.
+
+
+
+**Human rights**
+
+8. We do not employ children at our workplaces.
+
+
+9. We do not use forced labour in any form.
+We do not confiscate personal documents
+of our employees, or force them to make any
+payment to us or to anyone else in order to
+secure employment with us, or to work with us.
+
+
+**Bribery and corruption**
+
+10. Our employees and those representing us,
+including agents and intermediaries, shall
+not, directly or indirectly, offer or receive any
+illegal or improper payments or comparable
+benefits that are intended or perceived to
+obtain undue favours for the conduct of
+our business.
+
+
+
+
+
+
+
+10
+
+
+**Gifts and hospitality**
+
+11. Business gifts and hospitality are sometimes
+used in the normal course of business
+activity. However, if offers of gifts or
+hospitality (including entertainment or
+travel) are frequent or of substantial value,
+they may create the perception of, or
+an actual conflict of interest or an ‘illicit
+payment’. Therefore, gifts and hospitality
+given or received should be modest in value
+and appropriate, and in compliance with our
+company’s gifts and hospitality policy.
+
+
+
+**Freedom of association**
+
+12. We recognise that employees may be
+interested in joining associations or involving
+themselves in civic or public affairs in their
+personal capacities, provided such activities do
+not create an actual or potential conflict with
+the interests of our company. Our employees
+must notify and seek prior approval for any
+such activity as per the ‘Conflicts of Interest’
+clause of this Code and in accordance with
+applicable company policies and law.
+
+
+
+
+
+
+
+11
+
+
+**TCOC** 2015
+
+
+**Working outside employment with us**
+
+13. Taking employment, accepting a position of
+responsibility or running a business outside
+employment with our company, in your own
+time, with or without remuneration, could
+interfere with your ability to work effectively
+at our company or create conflicts of interest.
+Any such activity must not be with any
+customer, supplier, distributor or competitor
+of our company. Our employees must notify
+and seek prior approval for any such activity
+as per the ‘Conflicts of Interest’ clause of this
+Code and in accordance with applicable
+company policies and law.
+
+
+**Integrity of information and assets**
+
+14. Our employees shall not make any wilful
+omissions or material misrepresentation
+that would compromise the integrity of our
+records, internal or external communications
+and reports, including the financial
+statements.
+
+
+15. Our employees and directors shall seek
+proper authorisation prior to disclosing
+company or business-related information,
+and such disclosures shall be made in
+
+
+
+accordance with our company’s media
+and communication policy. This includes
+disclosures through any forum or media,
+including through social media.
+
+
+16. Our employees shall ensure the integrity of
+personal data or information provided by
+them to our company. We shall safeguard the
+privacy of all such data or information given
+to us in accordance with applicable company
+policies or law.
+
+
+17. Our employees shall respect and protect
+all confidential information and intellectual
+property of our company.
+
+
+18. Our employees shall safeguard the
+confidentiality of all third party intellectual
+property and data. Our employees shall
+not misuse such intellectual property and
+data that comes into their possession
+and shall not share it with anyone, except
+in accordance with applicable company
+policies or law.
+
+
+19. Our employees shall promptly report the
+loss, theft or destruction of any confidential
+information or intellectual property and data
+of our company or that of any third party.
+
+
+
+
+
+12
+
+
+20. Our employees shall use all company assets,
+tangible and intangible, including computer
+and communication equipment, for the
+purpose for which they are provided and in
+order to conduct our business. Such assets
+shall not be misused. We shall establish
+processes to minimise the risk of fraud, and
+misappropriation or misuse of our assets.
+
+
+21. We shall comply with all applicable
+anti-money laundering, anti-fraud and
+anti-corruption laws and we shall establish
+processes to check for and prevent any
+breaches of such laws.
+
+
+
+**Insider trading**
+
+22. Our employees must not indulge in any form
+of insider trading nor assist others, including
+immediate family, friends or business
+associates, to derive any benefit from
+access to and possession of price sensitive
+information that is not in the public domain.
+Such information would include information
+about our company, our group companies,
+our clients and our suppliers.
+
+
+
+
+
+
+
+
+
+13
+
+
+**TCOC** 2015
+
+
+**Prohibited drugs and substances**
+
+23. Use of prohibited drugs and substances
+creates genuine safety and other risks at our
+workplaces. We do not tolerate prohibited
+drugs and substances from being possessed,
+consumed or distributed at our workplaces,
+or in the course of company duties.
+
+
+**Conflicts of interest**
+
+24. Our employees and executive directors
+shall always act in the interest of our
+company and ensure that any business or
+personal association _including close personal_
+_relationships_ which they may have, does not
+create a conflict of interest with their roles
+and duties in our company or the operations
+of our company. Further, our employees and
+executive directors shall not engage in any
+business, relationship or activity, which might
+conflict with the interest of our company or
+our group companies.
+
+
+
+25. Should any actual or potential conflicts of
+interest arise, the concerned person must
+immediately report such conflicts and seek
+approvals as required by applicable law and
+company policy. The competent authority
+shall revert to the employee within a
+reasonable time as defined in our company’s
+policy, so as to enable the concerned
+employee to take necessary action as
+advised to resolve or avoid the conflict in
+an expeditious manner.
+
+
+26. In the case of all employees other than
+executive directors, the Chief Executive
+Officer / Managing Director shall be the
+competent authority, who in turn shall report
+such cases to the Board of Directors on a
+quarterly basis. In case of the Chief Executive
+Officer / Managing Director and executive
+directors, the Board of Directors of our
+company shall be the competent authority.
+
+
+
+
+
+
+
+14
+
+
+27. Notwithstanding such or any other instance
+of conflict of interest that exists due to
+historical reasons, adequate and full
+disclosure by interested employees shall be
+made to our company’s management. At
+the time of appointment in our company,
+our employees and executive directors
+shall make full disclosure to the competent
+authority, of any interest leading to an
+
+
+
+actual or potential conflict that such
+persons or their immediate family (including
+parents, siblings, spouse, partner, children)
+or persons with whom they enjoy close
+personal relationships, may have in a family
+business or a company or firm that is a
+competitor, supplier, customer or distributor
+of, or has other business dealings with,
+our company.
+
+
+
+
+
+
+
+**Examples of Potential Conflicts of Interest**
+
+A conflict of interest, actual or potential, arises where, directly or indirectly, an employee or
+executive director:
+
+(a) engages in a business, activity or relationship with anyone who is party to a transaction with
+our company;
+
+(b) is in a position to derive an improper benefit, personally or for any family member or for any
+person in a close personal relationship, by making or influencing decisions relating to any
+transaction;
+
+(c) conducts business on behalf of our company or is in a position to influence a decision with
+regard to our company’s business with a supplier or customer where a relative of, or a person
+in close personal relationship with, an employee or executive director is a principal officer or
+representative, resulting in a personal benefit or a benefit to the relative;
+
+(d) is in a position to influence decisions with regard to award of benefits such as increase in
+salary or other remuneration, posting, promotion or recruitment of a relative or a person in
+close personal relationship employed in our company or any of our group companies;
+
+(e) undertakes an activity by which the interest of our company or our group companies can be
+compromised or defeated; or
+
+(f) does anything by which an independent judgement of our company’s or our group
+companies’ best interest cannot be exercised.
+
+
+
+15
+
+
+**TCOC** 2015
+
+
+28. If there is a failure to make the required
+disclosure and our management becomes
+aware of an instance of conflict of interest
+that ought to have been disclosed by
+an employee or executive director, our
+management shall take a serious view of the
+
+
+
+matter and consider suitable disciplinary
+action as per the terms of employment. In
+all such matters, we shall follow clear and
+fair disciplinary procedures, respecting the
+employee’s right to be heard.
+
+
+
+**Examples of activities normally approved (post-disclosure) as per applicable**
+**company policy**
+
+
+Acceptance of a position of responsibility (whether for remuneration or otherwise) in the following
+cases would typically be permitted, provided the time commitments these demand do not disturb
+or distract from the employee’s primary duties and responsibilities in our company, and are promptly
+disclosed to the relevant competent authority:
+
+(a) Directorships on the Boards of any of our group companies, joint ventures or associate companies.
+
+(b) Memberships/positions of responsibility in educational/professional bodies, where such
+association will promote the interests of our company.
+
+(c) Memberships or participation in government committees/bodies or organisations.
+
+
+
+16
+
+
+# **OUR CUSTOMERS**
+
+We have continued to enjoy prosperity, even with adverse times to fight against.
+
+Our relations with all concerned are the most friendly. We have maintained the
+
+same character for straight-forward dealing with our constituents and customers.
+
+Our productions have continued to be of the same high quality, and therefore
+
+command the best reputation and realise the highest prices. … I mention these
+
+facts only to point out that with honest and straight-forward business principles,
+
+close and careful attention to details, and the ability to take advantage of
+
+favourable opportunities and circumstances, there is a scope for success.
+
+
+Jamsetji Tata
+Founder of the Tata group
+Chairman, Tata Sons (1868 – 1904)
+
+
+
+17
+
+
+**TCOC** 2015
+
+
+**Products and services**
+
+
+#### **E. OUR Customers**
+
+**Fair competition**
+
+
+
+1. We are committed to supplying products and
+services of world-class quality that meet all
+applicable standards.
+
+
+2. The products and services we offer shall
+comply with applicable laws, including
+product packaging, labelling and after-sales
+service obligations.
+
+
+3. We shall market our products and services
+on their own merits and not make unfair or
+misleading statements about the products
+and services of our competitors.
+
+
+**Export controls and trade sanctions**
+
+4. We shall comply with all relevant export
+controls or trade sanctions in the course
+of our business.
+
+
+
+5. We support the development and operation
+of competitive open markets and the
+liberalisation of trade and investment in each
+country and market in which we operate.
+
+
+6. We shall not enter into any activity
+constituting anti-competitive behaviour such
+as abuse of market dominance, collusion,
+participation in cartels or inappropriate
+exchange of information with competitors.
+
+
+7. We collect competitive information only in
+the normal course of business and obtain
+the same through legally permitted sources
+and means.
+
+
+**Dealings with customers**
+
+8. Our dealings with our customers shall be
+professional, fair and transparent.
+
+
+9. We respect our customers’ right to privacy
+in relation to their personal data. We shall
+safeguard our customers’ personal data, in
+accordance with applicable law.
+
+
+
+18
+
+
+19
+
+
+**TCOC** 2015
+
+
+# **OUR Communities**
+
+In a free enterprise, the community is not just another shareholder
+
+in business but is in fact the very purpose of its existence.
+
+
+Jamsetji Tata
+Founder of the Tata group
+Chairman, Tata Sons (1868 – 1904)
+
+
+
+20
+
+
+#### **F. OUR Communities and the environment**
+
+
+
+**Communities**
+
+1. We are committed to good corporate
+citizenship, and shall actively assist in the
+improvement of the quality of life of the
+people in the communities in which
+we operate.
+
+
+2. We engage with the community and other
+stakeholders to minimise any adverse impact
+that our business operations may have on the
+local community and the environment.
+
+
+3. We encourage our workforce to volunteer
+on projects that benefit the communities in
+which we operate, provided the principles of
+this Code, where applicable, and in particular
+the ‘Conflicts of Interest’ clause are followed.
+
+
+
+**The environment**
+
+4. In the production and sale of our products
+and services, we strive for environmental
+sustainability and comply with all applicable
+laws and regulations.
+
+
+5. We seek to prevent the wasteful use of
+natural resources and are committed to
+improving the environment, particularly
+with regard to the emission of greenhouse
+gases, consumption of water and energy, and
+the management of waste and hazardous
+materials. We shall endeavour to offset the
+effect of climate change in our activities.
+
+
+
+21
+
+
+**TCOC** 2015
+
+
+
+
+
+If we had done some of the things that some other groups have
+
+done, we would have been twice as big as we are today.
+
+But we didn’t, and I would not have it any other way.
+
+
+J.R.D. Tata
+Chairman, Tata Sons (1938 – 1991)
+
+(on the pace of expansion of the Tata group in the 1960s and 70s)
+
+
+
+22
+
+
+#### **G. Our value-chain partners**
+
+
+
+1. We shall select our suppliers and service
+providers fairly and transparently.
+
+
+2. We seek to work with suppliers and service
+providers who can demonstrate that they
+share similar values. We expect them to adopt
+ethical standards comparable to our own.
+
+
+3. Our suppliers and service providers shall
+represent our company only with duly
+authorised written permission from our
+company. They are expected to abide by
+
+
+
+the Code in their interactions with, and
+on behalf of us, including respecting the
+confidentiality of information shared
+with them.
+
+
+4. We shall ensure that any gifts or hospitality
+received from, or given to, our suppliers or
+service providers comply with our company’s
+gifts and hospitality policy.
+
+
+5. We respect our obligations on the use of third
+party intellectual property and data.
+
+
+
+
+
+
+
+
+
+23
+
+
+**TCOC** 2015
+
+
+# **OUR Financial** **Stakeholders**
+
+Ethical behaviour in business – in every sphere and with all
+
+constituents – has been the bedrock on which the Tata group
+
+has built, and operates, its enterprises. This has been an article of
+
+faith for the group ever since its inception, a fundamental element
+
+of our cherished heritage and the essence of our way of life.
+
+
+Ratan Tata
+Chairman, Tata Sons (1991 – 2012)
+
+
+
+24
+
+
+#### **H. OUR Financial Stakeholders**
+
+
+
+1. We are committed to enhancing shareholder
+value and complying with laws and
+regulations that govern shareholder rights.
+
+
+2. We shall inform our financial stakeholders
+about relevant aspects of our business in a
+fair, accurate and timely manner and shall
+disclose such information in accordance with
+applicable law and agreements.
+
+
+
+3. We shall keep accurate records of our
+activities and shall adhere to disclosure
+standards in accordance with applicable
+law and industry standards.
+
+
+
+25
+
+
+**TCOC** 2015
+
+
+# **Governments**
+
+Business, as I have seen it, places one great demand on you;
+
+it needs you to impose a framework of ethics, values, fairness
+
+and objectivity on yourself at all times. It is not easy to do this;
+
+you cannot impose it on yourself forcibly because it has to
+
+become an integral part of you.
+
+
+Ratan Tata
+Chairman, Tata Sons (1991 – 2012)
+
+
+
+26
+
+
+**Political non-alignment**
+
+
+#### **I. Governments**
+
+**Government engagement**
+
+
+
+1. We shall act in accordance with the
+constitution and governance systems of
+the countries in which we operate. We do
+not seek to influence the outcome of public
+elections, nor to undermine or alter any
+system of government. We do not support
+any specific political party or candidate for
+political office. Our conduct must preclude
+any activity that could be interpreted as
+mutual dependence/favour with any political
+body or person, and we do not offer or give
+any company funds or property or other
+resources as donations to any specific political
+party, candidate or campaign.
+
+
+Any financial contributions considered by
+our Board of Directors in order to strengthen
+democratic forces through a clean electoral
+process shall be extended only through the
+Progressive Electoral Trust in India, or by a
+similar transparent, duly-authorised, nondiscriminatory and non-discretionary vehicle
+outside India.
+
+
+
+2. We engage with the government and
+regulators in a constructive manner in order
+to promote good governance. We conduct
+our interactions with them in a manner
+consistent with our Code.
+
+
+3. We do not impede, obstruct or improperly
+influence the conclusions of, or affect the
+integrity or availability of data or documents
+for any government review or investigation.
+
+
+
+27
+
+
+**TCOC** 2015
+
+
+# **OUR Group companies**
+
+I do not think anyone was on par with Jamsetji as an industrial visionary.
+
+But that is not the sole reason why I have been an admirer of Jamsetji.
+
+The major reason was his sense of values, sterling values, which he
+
+imparted to this group. If someone were to ask me, what holds the
+
+Tata companies together, more than anything else, I would say it is our
+
+shared ideals and values which we have inherited from Jamsetji Tata.
+
+
+J.R.D. Tata
+Chairman, Tata Sons (1938 – 1991)
+
+
+
+28
+
+
+#### **J. OUR Group companies**
+
+
+
+1. We seek to cooperate with our group
+companies, including joint ventures, by
+sharing knowledge, physical resources,
+human and management resources and
+adopting leading governance policies and
+practices in accordance with applicable law
+including adherence to competition law,
+where relevant.
+
+
+2. We shall strive to achieve amicable resolution
+of any dispute between us and any of our
+group companies, through an appropriate
+dispute resolution mechanism so that it does
+not adversely affect our business interests
+and stakeholder value.
+
+
+
+3. We shall have processes in place to ensure
+that no third party or joint venture uses the
+TATA name/brand to further its interests
+without proper authorisation.
+
+
+4. Our Board of Directors shall consider for
+adoption policies and guidelines periodically
+formulated by Tata Sons and circulated to
+group companies.
+
+
+
+
+
+
+
+29
+
+
+**TCOC** 2015
+
+
+#### **Raising Concerns**
+
+
+
+We encourage our employees, customers, suppliers
+and other stakeholders to raise concerns or make
+disclosures when they become aware of any actual
+or potential violation of our Code, policies or law.
+We also encourage reporting of any event (actual
+or potential) of misconduct that is not reflective of
+our values and principles.
+
+
+Avenues available for raising concerns or queries or
+reporting cases could include:
+
+
+- immediate line manager or the Human
+Resources department of our company
+
+
+- designated ethics officials of our company
+
+
+- the ‘confidential reporting’ third party ethics
+helpline (if available)
+
+
+- any other reporting channel set out in our
+company’s ‘Whistleblower’ policy.
+
+
+
+We do not tolerate any form of retaliation against
+anyone reporting legitimate concerns. Anyone
+involved in targeting such a person will be subject
+to disciplinary action.
+
+
+If you suspect that you or someone you know
+has been subjected to retaliation for raising a
+concern or for reporting a case, we encourage
+you to promptly contact your line manager, the
+company’s Ethics Counsellor, the Human Resources
+department, the MD/CEO or the office of the
+group’s Chief Ethics Officer.
+
+
+
+
+
+
+
+30
+
+
+#### **Accountability**
+
+
+
+This Code is more than a set of prescriptive
+guidelines issued solely for the purpose of
+formal compliance. It represents our collective
+commitment to our value system and to our core
+principles.
+
+
+Every person employed by us, directly or indirectly,
+should expect to be held accountable for his/her
+behaviour. Should such behaviour violate this Code,
+
+
+
+they may be subject to action according to their
+employment terms and relevant company policies.
+
+
+When followed in letter and in spirit, this Code is
+_‘lived’_ by our employees as well as those who work
+with us. It represents our shared responsibility to all
+our stakeholders, and our mutual commitment to
+each other.
+
+
+
+
+
+
+
+31
+
+
+**TCOC** 2015
+
+#### **Note**
+
+
+The Code does not provide a comprehensive and complete explanation of all expectations from a
+company standpoint or obligations from a stakeholder standpoint.
+
+
+Our employees have a continuing obligation to familiarise themselves with all applicable law, group-level
+advisories and policies, company-level policies, procedures and work rules as relevant. For any guidance
+on interpretation of the Code, we may seek support from our company’s Ethics Counsellor or from the
+group’s Chief Ethics Officer, as appropriate.
+
+
+All joint ventures are encouraged to adopt the Tata Code of Conduct (TCOC) or a code of conduct that
+incorporates all elements of the TCOC.
+
+
+This version of the Tata Code of Conduct supersedes all earlier versions and associated documents and
+stands effective from 29 [th ] July, 2015.
+
+
+For any query or clarification on the Code, please contact the office of the group’s Chief Ethics Officer via
+email at: ethicsoffice@tata.com.
+
+
+
+32
+
+
+#### **Tata Code of Conduct – 2015**
+
+I acknowledge that I have received the Tata Code of Conduct.
+
+
+I have read the Tata Code of Conduct and I acknowledge that as a Tata employee, I am required to
+comply with the guidelines described therein and failure to do so may subject me to action as per my
+employment terms and relevant company policies.
+
+
+If I have a concern about a violation, or a potential violation of the Tata Code of Conduct, I understand
+that there are channels available to me in my company to report such concerns. By making use of these
+channels when necessary, I will play my part in maintaining the high ethical standards to which we
+hold ourselves.
+
+
+Signature: _________________________________
+
+
+Date: _____________________________________
+
+
+Name: _________________________________________________________________________________
+
+
+Department: ____________________________________________________________________________
+
+
+Address: ________________________________________________________________________________
+
+
+_______________________________________________________________________________________
+
+
+_______________________________________________________________________________________
+
+
+_(Please submit this declaration to your Ethics Counsellor or the Human Resource department of your company.)_
+
+
+
+33
+
+
+For further information on the Code please contact:
+The Ethics Office,
+Tata Sons Ltd.,
+Bombay House,
+24, Homi Mody Street,
+Mumbai – 400001, India.
+Email: ethicsoffice@tata.com
+
+

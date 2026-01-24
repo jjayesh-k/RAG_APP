@@ -6,27 +6,37 @@ import pickle
 import json
 import threading
 from werkzeug.utils import secure_filename
-from parser import parse_hybrid_pdf
+# from parser import parse_hybrid_pdf
+from pymupdf_parser import parse_hybrid_pdf
 import tempfile
-from chunker import semantic_chunker_optimized
+# from chunker import semantic_chunker_optimized
+from recursive_chunker import chunk_markdown
 from indexer import build_index_optimized, to_float16, get_file_hash
+from config import EMBEDDING_MODEL, LANGUAGE_MODEL, CACHE_DIR, INDEX_CACHE, BATCH_SIZE
+import sys
+import webbrowser
+from threading import Timer
 
+# Check if a settings.json file exists next to the .exe
+if getattr(sys, 'frozen', False):
+    app_dir = os.path.dirname(sys.executable)
+else:
+    app_dir = os.path.dirname(os.path.abspath(__file__))
+
+settings_path = os.path.join(app_dir, 'settings.json')
+
+if os.path.exists(settings_path):
+    print(f"✓ Loading custom settings from {settings_path}")
+    try:
+        with open(settings_path, 'r') as f:
+            settings = json.load(f)
+            EMBEDDING_MODEL = settings.get('EMBEDDING_MODEL', EMBEDDING_MODEL)
+            LANGUAGE_MODEL = settings.get('LANGUAGE_MODEL', LANGUAGE_MODEL)
+    except Exception as e:
+        print(f"⚠️ Error loading settings: {e}")
+
+print(f"Using Models -> Language: {LANGUAGE_MODEL} | Embedding: {EMBEDDING_MODEL}")
 app = Flask(__name__)
-
-# --- CONFIGURATION ---
-EMBEDDING_MODEL = 'nomic-embed-text'
-# EMBEDDING_MODEL = 'all-minilm' --->> ollama pull all-minilm
-# LANGUAGE_MODEL = 'ministral-3:3b'
-LANGUAGE_MODEL = 'mistral:7b'
-# EMBEDDING_MODEL = 'hf.co/CompendiumLabs/bge-base-en-v1.5-gguf'
-# CACHE_DIR = "cache"
-# INDEX_CACHE = "cache/index_cache"
-BATCH_SIZE = 50
-
-  # Process embeddings in batches
-
-# os.makedirs(CACHE_DIR, exist_ok=True)
-# os.makedirs(INDEX_CACHE, exist_ok=True)
 
 # --- GLOBAL STATE ---
 class RAGState:
@@ -59,8 +69,6 @@ def upload_files():
 
     full_text = ""
     for f in files:
-        # content = f.read().decode('utf-8', errors='ignore')
-        # full_text += content + "\n"
         filename = secure_filename(f.filename)
         file_ext = os.path.splitext(filename)[1].lower()
 
@@ -111,7 +119,7 @@ def upload_files():
         chunk_start = time.time()
         
         # ALWAYS use semantic chunker now
-        chunks = semantic_chunker_optimized(full_text)
+        chunks = chunk_markdown(full_text)
         
         chunk_time = time.time() - chunk_start
         print(f"✓ Created {len(chunks)} chunks in {chunk_time:.2f}s")
@@ -145,6 +153,8 @@ def upload_files():
         }
     })
 
+import re # Add this at the top of app.py
+
 @app.route('/chat', methods=['POST'])
 def chat():
     if not state.is_ready:
@@ -155,39 +165,114 @@ def chat():
 
     print(f"\n--- Query: {query} ---")
     
-    # Retrieve (with lock to prevent race conditions)
+    # 1. Retrieve Candidates (Vector Search)
     with state.lock:
+        # USE EMBEDDING_MODEL (Uppercase constant)
         embed = ollama.embed(model=EMBEDDING_MODEL, input=query)['embeddings'][0]
-        matches = state.vector_index.search(to_float16(embed), 15)
+        # Fetch Top 30 to cast a wide net
+        matches = state.vector_index.search(to_float16(embed), 30) 
+    
+    # 2. Setup Keywords & Phrases
+    # List A: Words to Ignore completely (Stop Words)
+    stop_words = {
+        'what', 'is', 'explain', 'the', 'a', 'an', 'in', 'on', 'of', 'for', 'to', 'and', 
+        'how', 'do', 'does', 'are', 'all', 'me', 'us', 'list', 'show', 'tell', 'about', 'describe'
+    }
+    
+    # List B: Command words to strip ONLY for the "Phrase Match" check
+    # We remove "explain", but we KEEP "of" so "Freedom OF Association" stays intact
+    command_prefixes = ['explain', 'what is', 'tell me about', 'describe', 'list', 'show me']
+    
+    query_lower = query.lower()
+    
+    # --- FIX 1: Smart Phrase Cleaning ---
+    # "Explain freedom of association" -> "freedom of association"
+    search_phrase = query_lower
+    for cmd in command_prefixes:
+        if search_phrase.startswith(cmd):
+            search_phrase = search_phrase[len(cmd):].strip()
+    
+    # Create "Query Terms" for individual word matching
+    query_terms = set([word for word in query_lower.split() if word not in stop_words])
     
     results = []
+    
+    # 3. Hybrid Scoring Loop
     for idx, dist in zip(matches.keys, matches.distances):
-        sim = 1 - dist
-        if sim > 0.25:
-            results.append((state.chunk_map[idx], sim))
+        if idx == -1: continue # Skip empty Faiss slots
+            
+        vector_score = 1 - dist
+        if vector_score < 0.20: continue
+            
+        chunk_text = state.chunk_map[idx]
+        chunk_lower = chunk_text.lower()
+        keyword_bonus = 0
+        
+        # --- BONUS A: Smart Phrase Match (+0.5) ---
+        # Now we check if "freedom of association" is in the text (ignoring "Explain")
+        # len > 3 check prevents matching empty strings if user types just "explain"
+        if len(search_phrase) > 3 and search_phrase in chunk_lower:
+            keyword_bonus += 0.5 
+            
+        # --- BONUS B: Header Match (+0.3) ---
+        first_line = chunk_lower.split('\n')[0]
+        if any(term in first_line for term in query_terms):
+            keyword_bonus += 0.3
+            
+        # --- BONUS C: Word Match (max +0.25) ---
+        matches_found = 0
+        for term in query_terms:
+            if re.search(r'\b' + re.escape(term) + r'\b', chunk_lower):
+                matches_found += 1
+        word_bonus = min(matches_found * 0.05, 0.25)
+        keyword_bonus += word_bonus
+        
+        final_score = vector_score + keyword_bonus
+        
+        # STORE INDEX TOO: (Index, Text, Score)
+        results.append((idx, chunk_text, final_score))
+
+    # --- FIX 2: Context Expansion (Smart Neighbors) ---
+    # Sort by score to find the "Anchor" chunks
+    results.sort(key=lambda x: x[2], reverse=True)
     
-    results.sort(key=lambda x: x[1], reverse=True)
-    top_results = results[:5]
-
-    print(f"Retrieved {len(top_results)} chunks:")
-    for i, (txt, score) in enumerate(top_results):
-        print(f"  [{i}] {score:.2f} | {txt}...")
-
-    if not top_results:
-        return jsonify({"error": "No relevant data found in documents."})
-
-    context_str = "\n\n".join([f"Source {i+1}: {txt}" for i, (txt, _) in enumerate(top_results)])
+    final_indices = set()
+    top_anchors = results[:3] # Pick top 3 winners
     
-    # Stream response
+    for idx, txt, score in top_anchors:
+        final_indices.add(idx)
+        
+        # If score is high (>0.5), it's a direct hit (like a Header or Phrase match).
+        # Automatically grab the NEXT 2 chunks to capture the full list/answer.
+        if score > 0.5:
+            if (idx + 1) in state.chunk_map: 
+                final_indices.add(idx + 1)
+                print(f"  [Expand] Auto-included Neighbor Chunk {idx+1}")
+            if (idx + 2) in state.chunk_map: 
+                final_indices.add(idx + 2)
+                print(f"  [Expand] Auto-included Neighbor Chunk {idx+2}")
+
+    # Sort indices so text appears in reading order (Chunk 9 -> 10 -> 11)
+    sorted_indices = sorted(list(final_indices))
+    
+    final_context_list = []
+    for idx in sorted_indices:
+        txt = state.chunk_map[idx]
+        final_context_list.append((txt, 0.0)) 
+
+    if not final_context_list:
+        return jsonify({"error": "No relevant data found."})
+
+    # 5. Generate Response
+    context_str = "\n\n".join([f"Source (Chunk {i}): {txt}" for i, (txt, _) in zip(sorted_indices, final_context_list)])
+    
     def generate():
-        context_data = [{"text": txt, "score": float(score)} for txt, score in top_results]
+        # Send context metadata to UI
+        # We limit to top 5 for UI display to prevent clutter
+        context_data = [{"text": txt[:200]+"...", "score": 1.0} for txt, _ in final_context_list[:5]]
         yield json.dumps({"type": "context", "data": context_data}) + "\n"
 
-        system_instruction = """You are a helpful AI assistant.
-1. Use ONLY the provided Context to answer questions.
-2. If the answer is not in the context, say "I don't have that information."
-3. Be concise and professional."""
-
+        system_instruction = "You are a helpful AI assistant. Use ONLY the provided Context to answer."
         final_prompt = f"""{system_instruction}
 
 Context:
@@ -198,7 +283,7 @@ Question: {query}
 Answer:"""
 
         stream = ollama.chat(
-            model=LANGUAGE_MODEL,
+            model=LANGUAGE_MODEL, # Uppercase constant
             messages=[{'role': 'user', 'content': final_prompt}],
             stream=True
         )
@@ -229,5 +314,15 @@ def clear_cache():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+# if __name__ == '__main__':
+#     app.run(debug=True, port=5000, threaded=True)
 if __name__ == '__main__':
-    app.run(debug=True, port=5000, threaded=True)
+    # Automatically open the browser after 1.5 seconds
+    def open_browser():
+        webbrowser.open_new('http://127.0.0.1:5000/')
+
+    print("Starting RAG Engine...")
+    Timer(1.5, open_browser).start()
+    
+    # Disable debug mode (Debug mode crashes PyInstaller apps)
+    app.run(port=5000, debug=False)
